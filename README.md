@@ -2,13 +2,9 @@
 PowerShell script to sync user photos in Office 365 (Exchange to SharePoint)
 
 TO USE:
-1. Download and Install the SharePoint Online Client Components SDK
-2. Create a CSV file with 1 column: Email, and a row value for each email address you wish to sync.
-3. Update the script variables:
-  A) the path to your CSV file
-  B) a temporary storage location
-  C) your organization's URL prefix
-  D) Paths to reference Client Component DLLs
+1. Extract Temp.zip to your c:\ drive
+2. Update the users.csv file with the email address of the photos you like to sync
+3. Update the script variables for you organizations URL prefix on line 5
 4. Run the Script
 
 WHAT IT DOES:
