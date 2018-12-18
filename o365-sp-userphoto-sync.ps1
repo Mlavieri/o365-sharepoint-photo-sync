@@ -1,3 +1,5 @@
+#Extract temp.zip to your C:\ Drive and update the users.csv file with the email address of your organization. Update Line 5 with your org name
+
 $csvPath = "c:\temp\users.csv" #CSV File that contains a single column of user email addresses. Heading = Email
 $tempFolder = "c:\temp\photos\" #temporarily location to store image for resizing and re-uploading.
 $orgName = "contoso" #org prefix; e.g., contoso
