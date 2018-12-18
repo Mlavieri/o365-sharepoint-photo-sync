@@ -1,4 +1,4 @@
-﻿﻿$csvPath = "c:\temp\users.csv" #CSV File that contains a single column of user email addresses. Heading = Email
+$csvPath = "c:\temp\users.csv" #CSV File that contains a single column of user email addresses. Heading = Email
 $tempFolder = "c:\temp\photos\" #temporarily location to store image for resizing and re-uploading.
 $orgName = "contoso" #org prefix; e.g., contoso
 
@@ -6,10 +6,10 @@ $adminURL = "https://" + $orgName  + "-admin.sharepoint.com"
 $mySiteURL = "https://" + $orgName + "-my.sharepoint.com"
 
 #Install O365 Client Side Libraries...
-Add-Type -Path "C:\Program Files\SharePoint Client Components\16.0\Assemblies\Microsoft.Online.SharePoint.Client.Tenant.dll"
-Add-Type -Path "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.dll"
-Add-Type -Path "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.Runtime.dll"
-Add-Type -Path "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.UserProfiles.dll"
+Add-Type -Path "C:\temp\dll\Microsoft.Online.SharePoint.Client.Tenant.dll"
+Add-Type -Path "C:\temp\dll\Microsoft.SharePoint.Client.dll"
+Add-Type -Path "C:\temp\dll\Microsoft.SharePoint.Client.Runtime.dll"
+Add-Type -Path "C:\temp\dll\Microsoft.SharePoint.Client.UserProfiles.dll"
 
 $UserCredential = Get-Credential
 
